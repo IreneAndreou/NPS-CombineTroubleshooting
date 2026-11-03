@@ -16,3 +16,6 @@ multidimfit*.txt
 # Python / OS
 __pycache__/
 .DS_Store
+
+# Local editor workspaces
+*.code-workspace

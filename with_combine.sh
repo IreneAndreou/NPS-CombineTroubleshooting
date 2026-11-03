@@ -13,10 +13,11 @@ fi
 root="$(cd "$(dirname "$0")" && pwd)"
 case "$1" in
   *.py) runner="python3" ;;
-  *)    runner="bash" ;;
+  *)    runner="source" ;;
 esac
 
-exec bash -c "set -a
+exec bash -c "shopt -s expand_aliases
+set -a
 cd /cvmfs/cms.cern.ch/cat
 source ./combine_env.sh > /dev/null
 set +a

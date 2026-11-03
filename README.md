@@ -26,6 +26,7 @@ Each run writes its cards, ROOT files and logs into the repo root, and its plots
 |---|---|
 | `with_combine.sh` | Entry point: loads Combine and runs a demo file from the repo root |
 | `demos/run_NN_*.py` | One file per demo: the Combine commands and the plots, in the order of the slide |
+| `demos/run_B1_stack_systs.py`, `demos/run_B2_emptytest.py`, `demos/run_B3_mccap.py` | Backup-slide demos: stacking with generic systematics, the empty-bin test, and autoMCStats with an MC error larger than the yield |
 | `demos/src/cards.py` | Card and input writers: the counting-card writer and one function per demo's cards |
 | `demos/src/plots.py` | Figure functions, one per plot (each writes `plots/<name>.pdf` and `.png`) |
 | `demos/src/reports.py` | Text printouts from fit outputs (fit health, post-fit uncertainties) |
