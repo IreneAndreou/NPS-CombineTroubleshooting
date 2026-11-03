@@ -1,0 +1,18 @@
+# Combine outputs (ROOT files, logs) written by the demos
+*.root
+*.log
+higgsCombine*
+roostats-*
+combine_logger.out
+multidimfit*.txt
+
+# Demo outputs: every top-level directory is generated, except the tracked ones below
+/*/
+!/demos/
+!/docs/
+!/inputs/
+!/plots/
+
+# Python / OS
+__pycache__/
+.DS_Store
