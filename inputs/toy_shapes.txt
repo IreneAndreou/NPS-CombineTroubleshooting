@@ -1,0 +1,19 @@
+# toy_shapes.txt — the same toy as toy.txt, but as one 5-bin histogram channel.
+imax 1
+jmax 2
+kmax *
+------------------------------------------------------------
+shapes * * toy_shapes.root $PROCESS $PROCESS_$SYSTEMATIC
+------------------------------------------------------------
+bin          SR
+observation  -1
+------------------------------------------------------------
+bin          SR     SR     SR
+process      sig    WZ     fakes
+process      0      1      2
+rate         -1     -1     -1
+------------------------------------------------------------
+lumi    lnN  1.02   1.02   -
+wz_xs   lnN  -      1.10   -
+fakes   lnN  -      -      1.30
+* autoMCStats 10 0 1
